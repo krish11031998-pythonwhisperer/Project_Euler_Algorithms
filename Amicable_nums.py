@@ -39,6 +39,7 @@ def find_amicable_pair(dict):
 	print(amicable_pairs)
 	print(len(amicable_pairs))
 
+
 def amicable_num(limit):
 
 	dict = dict_proper_divisor_num(limit)
