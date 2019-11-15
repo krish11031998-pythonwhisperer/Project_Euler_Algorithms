@@ -22,6 +22,17 @@ def dict_proper_divisor_num(limit):
 	return proper_div_num_dict
 
 
+def sum_of_amicable_pairs(set):
+
+	sum_amicable_pairs = 0
+	for pairs in set:
+		for set_el in pairs:
+			sum_amicable_pairs+= set_el
+
+	print("The Sum of all the amicable pairs is {}".format(sum_amicable_pairs))
+
+
+
 def find_amicable_pair(dict):
 	amicable_pairs = set()
 	d_keys = list(dict.keys())
@@ -38,6 +49,7 @@ def find_amicable_pair(dict):
 						amicable_pairs.add(frozenset({x,dict[x]}))
 	print(amicable_pairs)
 	print(len(amicable_pairs))
+	sum_of_amicable_pairs(amicable_pairs)
 
 
 def amicable_num(limit):
